@@ -18,6 +18,8 @@ public class User {
     private String password;
     private String email;
 
+    public User() {
+    }
     public User(String user, String password, String email) {
         this.user = user;
         this.password = password;
@@ -49,6 +51,4 @@ public class User {
                 ", email='" + email + '\'' +
                 '}';
     }
-
-
 }
