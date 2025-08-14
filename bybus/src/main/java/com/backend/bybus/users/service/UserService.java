@@ -2,7 +2,6 @@ package com.backend.bybus.users.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.backend.bybus.users.model.User;
 import com.backend.bybus.users.repository.UserRepository;
@@ -11,7 +10,6 @@ import com.backend.bybus.users.repository.UserRepository;
 public class UserService {
     private final UserRepository userRepository;
 
-    @Autowired
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
