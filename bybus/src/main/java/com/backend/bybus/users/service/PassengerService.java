@@ -17,6 +17,7 @@ public class PassengerService {
     @Autowired
     private UserRepository userRepository;
 
+    
     public PassengerService(PassengerRepository passengerRepository) {
         this.passengerRepository = passengerRepository;
     }

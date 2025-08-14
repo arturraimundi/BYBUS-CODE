@@ -22,6 +22,8 @@ public class Passenger {
     private String contactNumber;
     private String email;
     
+    public Passenger() {
+    }
     public Passenger(String name, String contactNumber, String email) {
         this.name = name;
         this.contactNumber = contactNumber;
