@@ -30,7 +30,7 @@ public class OwnerService {
             User user = new User();
             user.setEmail(owner.getEmail());
             user.setUser(owner.getName());
-            user.setPassword("defaultPassword"); // Set a default password or handle it as needed
+            user.setPassword("defaultPassword");
             owner.setUser(userRepository.save(user));
             return ownerRepository.save(owner);
         } 
