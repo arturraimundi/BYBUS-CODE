@@ -7,6 +7,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.backend.bybus.auth.repository.user.UserRepository;
+import com.backend.bybus.auth.model.user.User;
 
 
 @Service
@@ -21,4 +22,7 @@ public class AuthorizationService implements UserDetailsService{
     }
     
     
+    public User createUser(User user) {
+        return userRepository.save(user);
+    }
 }
